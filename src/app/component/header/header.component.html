@@ -1,0 +1,31 @@
+<div>
+    <app-search-form (emitSearch)="setSearch($event)"></app-search-form>
+</div>
+<div class="nav__main">
+
+<nav class="nav__header">
+    <ul class="nav__ul">
+        
+        <li class="nav__li>">{{nav.home}}</li>
+        <li class="nav__li>">
+            <ul>
+                <li class="nav__options" *ngFor="let option of nav.men" >{{option}}</li>
+            </ul>
+        </li>
+        <li class="nav__li>">
+            <ul>
+                <li  class="nav__options" *ngFor="let option of nav.women">{{option}}</li>
+            </ul>
+        </li>
+        <li class="nav__li>">{{nav.contact}}</li>
+            <li *ngFor="let help of nav.men">{{ help }}</li>
+
+
+
+
+    </ul>
+
+
+</nav>
+
+</div>

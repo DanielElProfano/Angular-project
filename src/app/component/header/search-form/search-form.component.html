@@ -1,0 +1,16 @@
+<p>search-form works!</p>
+
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="searchForm">
+    <!-- Fieldset del primer campo - name -->
+      <fieldset>
+      <label for="search">search:</label>
+      <input type="text" id="search" formControlName="search">
+          <!-- Si el campo search es invalido / ha sido tocado / submitted = true -->
+      <div *ngIf="!searchForm.get('search').valid &&
+          (searchForm.get('search').dirty || submitted)">
+        Has introducido mal tu nombre
+      </div>
+    </fieldset>
+	<button type="submit" [disabled]="!searchForm.valid">Submit</button>
+
+</form>
