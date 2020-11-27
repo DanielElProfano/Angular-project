@@ -1,0 +1,19 @@
+.nav{
+
+    &__main{
+        display:flex;
+        height: 100px;
+        width: 100%;
+    }
+  
+    &__ul{
+        display: flex;
+    }
+
+    &__li{
+        list-style: none;
+    }
+    &__options{
+        list-style: none;
+    }
+}

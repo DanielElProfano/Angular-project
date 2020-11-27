@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  hola : string = "'caracola";
+
 
   constructor() { 
 
-    this.hola="hola";
   }
 
   ngOnInit(): void {

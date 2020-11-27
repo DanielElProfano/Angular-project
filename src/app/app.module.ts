@@ -11,9 +11,11 @@ import { BodyComponent } from './component/body/body.component';
 import { GalleryComponent } from './component/body/gallery/gallery.component';
 
 import { ServiceManagerService } from './services/service-manager.service';
+import { GalleryServiceService } from './services/gallery-service.service';
 
 import { FormComponent } from './component/body/form/form.component';
 import { SearchFormComponent } from './component/header/search-form/search-form.component';
+
 
 
 @NgModule({
@@ -34,6 +36,7 @@ import { SearchFormComponent } from './component/header/search-form/search-form.
   ],
   providers: [
     ServiceManagerService,
+    GalleryServiceService
     
   ],
   bootstrap: [AppComponent]

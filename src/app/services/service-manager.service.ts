@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Iform} from '../component/body/form/Iform';
+import { Igallery } from '../component/body/gallery/Igallery';
+import { GalleryServiceService } from './gallery-service.service';
 
 
 @Injectable({
@@ -9,8 +11,9 @@ export class ServiceManagerService {
 
   public form : Iform | any= {};
    search :string[] =[];
+   searchService : Igallery | any ={};
 
-  constructor() { 
+  constructor(private galleryServiceService: GalleryServiceService) { 
   }
     
   
@@ -28,10 +31,12 @@ export class ServiceManagerService {
     return this.search;
     
   }
-  public pushManagerService_search( pushea : string){
+  // public pushManagerService_search( pushea : string){
     
-    
-    this.search.push(pushea);
-    return this.getManagerService_search();
-  }
+  //   debugger
+  //   this.search[0] = pushea;
+  //   this.searchService.description = pushea;
+  //   this.galleryServiceService.pushGalleryServiceService(pushea);
+  //   return this.getManagerService_search();
+  // }
 }

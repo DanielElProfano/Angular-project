@@ -38,8 +38,9 @@ export class SearchFormComponent implements OnInit {
       };
       
       // Reseteamos todos los campos y el indicador de envío o submitted
-      this.busqueda = search.search
-      this.serviceNanagerService.pushManagerService_search(this.busqueda);
+      this.busqueda = search.search;
+      debugger
+      // this.serviceNanagerService.pushManagerService_search(this.busqueda);
       this.searchForm.reset();
       this.submitted = false;
      
